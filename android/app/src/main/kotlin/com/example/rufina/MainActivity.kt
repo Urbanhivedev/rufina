@@ -1,4 +1,4 @@
-package com.example.rufina
+package com.urbanhive.rufina
 
 import io.flutter.embedding.android.FlutterActivity
 

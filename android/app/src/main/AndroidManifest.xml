@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.rufina">
+    package="com.urbanhive.rufina">
    <application
         android:label="rufina"
         android:name="${applicationName}"
