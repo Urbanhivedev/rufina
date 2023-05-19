@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class AppColor {
   static const yellow = {
-    900: Color(0xffF69C14),
+    900: Color(0xffFF8A00),
   };
 
   static const black = {

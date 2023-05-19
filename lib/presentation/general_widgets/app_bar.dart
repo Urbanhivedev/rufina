@@ -8,7 +8,7 @@ PreferredSizeWidget customeAppBar(
   return AppBar(
     actions: [
       Visibility(
-        visible: title.toLowerCase() == "play".toLowerCase() ? true : false,
+        // visible: title.toLowerCase() == "play".toLowerCase() ? true : false,
         child: Container(
           margin: const EdgeInsets.only(
             right: 20,
@@ -22,17 +22,29 @@ PreferredSizeWidget customeAppBar(
         ),
       )
     ],
-    leading: Container(),
-    centerTitle: true,
+    automaticallyImplyLeading: false,
+    // leading: Padding(
+    //   padding: const EdgeInsets.only(left: 10.0),
+    //   child: IconButton(
+    //     icon: const Icon(
+    //       Icons.arrow_back_ios,
+    //       color: Colors.black,
+    //     ),
+    //     onPressed: () {
+    //       Navigator.of(context).pop();
+    //       // Define your custom back button action here
+    //     },
+    //   ),
+    // ),
+    centerTitle: false,
     backgroundColor: Colors.white,
     elevation: 0,
-    title: Container(
-      margin: const EdgeInsets.only(top: 15),
+    title: Padding(
+      padding: const EdgeInsets.only(top: 20.0),
       child: Text(
-        title.toUpperCase(),
-        style: Theme.of(context).textTheme.headline4?.copyWith(
-              fontWeight: FontWeight.w600,
-            ),
+        title,
+        style: const TextStyle(
+            fontWeight: FontWeight.w700, color: Colors.black, fontSize: 25),
       ),
     ),
   );
