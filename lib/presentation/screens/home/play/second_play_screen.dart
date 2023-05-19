@@ -34,45 +34,49 @@ class _PlayScondeScreenState extends State<PlayScondeScreen> {
           // surfaceTintColor: AppColor.fineChowGray300,
           borderOnForeground: false,
           // color: AppColor.fineChowGray300,
-          child: Container(
-            height: 75,
-            padding: const EdgeInsets.only(
-              top: 8,
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                navItemms(
-                  context: context,
-                  index: 0,
-                  navIcon: "Home.svg",
-                  color: Colors.black26,
-                  navTitle: "Home",
-                ),
-                navItemms(
-                  context: context,
-                  index: 1,
-                  navIcon: "Video.svg",
-                  color: Colors.black,
-                  navTitle: "Play",
-                ),
-                navItemms(
-                  context: context,
-                  index: 2,
-                  navIcon: "Bag_alt.svg",
-                  color: Colors.black26,
-                  navTitle: "Shop",
-                ),
-                navItemms(
-                  context: context,
-                  index: 3,
-                  navIcon: "Filter.svg",
-                  color: Colors.black26,
-                  navTitle: "Filter",
-                ),
-              ],
+          child: Padding(
+            padding:
+                EdgeInsets.only(bottom: MediaQuery.of(context).padding.bottom),
+            child: Container(
+              height: 75,
+              padding: const EdgeInsets.only(
+                top: 8,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  navItemms(
+                    context: context,
+                    index: 0,
+                    navIcon: "Home.svg",
+                    color: Colors.black26,
+                    navTitle: "Home",
+                  ),
+                  navItemms(
+                    context: context,
+                    index: 1,
+                    navIcon: "Video.svg",
+                    color: Colors.black,
+                    navTitle: "Play",
+                  ),
+                  navItemms(
+                    context: context,
+                    index: 2,
+                    navIcon: "Bag_alt.svg",
+                    color: Colors.black26,
+                    navTitle: "Shop",
+                  ),
+                  navItemms(
+                    context: context,
+                    index: 3,
+                    navIcon: "Filter.svg",
+                    color: Colors.black26,
+                    navTitle: "Filter",
+                  ),
+                ],
+              ),
             ),
           ),
         ),
